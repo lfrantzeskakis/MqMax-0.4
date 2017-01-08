@@ -1,0 +1,24 @@
+Circuit: * C:\Users\Fralam\Desktop\stepup.asc
+
+Limiting rise time of source v1 to 1.2e-006
+Limiting fall time of source v1 to 1.2e-006
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Apr 28 23:50:05 2014
+Total elapsed time: 203.908 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 30491752
+traniter = 30491747
+tranpoints = 6877217
+accept = 4804657
+rejected = 2072560
+matrix size = 12
+fillins = 0
+solver = Normal
+Matrix Compiler1: 490 byte object code size  5.2/5.2/[4.8]
+Matrix Compiler2: 858 byte object code size  4.8/5.5/[4.9]
+
+
