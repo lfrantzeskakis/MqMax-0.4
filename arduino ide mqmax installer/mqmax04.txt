@@ -1,0 +1,32 @@
+##############################################################
+
+mqmax.name= MqMax 0.4
+mqmax.vid.0=0x2A03
+mqmax.pid.0=0x0057
+
+mqmax.upload.tool=avrdude
+mqmax.upload.protocol=arduino
+mqmax.upload.maximum_size=32256
+mqmax.upload.maximum_data_size=2048
+mqmax.upload.speed=115200
+mqmax.upload.network.endpoint_upload=/pgm/upload
+mqmax.upload.network.endpoint_sync=/pgm/sync
+mqmax.upload.network.sync_return=204:SYNC
+mqmax.upload.network.endpoint_reset=/log/reset
+mqmax.upload.network.port=80
+
+mqmax.bootloader.tool=avrdude
+mqmax.bootloader.low_fuses=0xFF
+mqmax.bootloader.high_fuses=0xDE
+mqmax.bootloader.extended_fuses=0x05
+mqmax.bootloader.unlock_bits=0x3F
+mqmax.bootloader.lock_bits=0x0F
+mqmax.bootloader.file=optiboot/optiboot_atmega328.hex
+
+mqmax.build.mcu=atmega328p
+mqmax.build.f_cpu=16000000L
+mqmax.build.board=AVR_UNO_WIFI_DEV_ED
+mqmax.build.core=arduino
+mqmax.build.variant=standard
+mqmax.build.esp_ch_uart_br=19200
+mqmax.build.extra_flags=-DESP_CH_UART -DESP_CH_UART_BR={build.esp_ch_uart_br}
